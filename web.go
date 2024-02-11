@@ -6,6 +6,8 @@ import (
 )
 
 type msg string
+// Something this 
+
 func (m msg) ServeHTTP(resp http.ResponseWriter, req *http.Request) {
 	fmt.Fprint(resp, m)
 }
